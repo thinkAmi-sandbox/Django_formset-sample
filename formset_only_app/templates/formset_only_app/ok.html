@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ModelFormset Only</title>
+</head>
+<body>
+<h1>ModelFormset Only : OK</h1>
+<div id="main">
+    <form method="POST" action="">
+        {% csrf_token %}
+        {# formsetしかいらないのに、formオブジェクトが設定されている #}
+        <div>{{ items }}</div>
+        <input type="submit"/>
+    </form>
+</div>
+</body>
+</html>
+
